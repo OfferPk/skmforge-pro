@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 640" width="1000" height="640">
+  <defs>
+    <linearGradient id="uiBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070a10"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1000" height="640" fill="url(#uiBg)"/>
+
+  <!-- Top App Navigation Bar -->
+  <rect x="0" y="0" width="1000" height="55" fill="url(#headerGrad)" stroke="#334155" stroke-width="1"/>
+  <circle cx="25" cy="27" r="6" fill="#ef4444"/>
+  <circle cx="45" cy="27" r="6" fill="#f59e0b"/>
+  <circle cx="65" cy="27" r="6" fill="#10b981"/>
+
+  <text x="95" y="33" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="15" font-weight="700" fill="#ffffff">🛰️ SKMForge Pro — CCSDS 354.0-M-1 Symmetric Key Management Cockpit</text>
+  <rect x="740" y="16" width="130" height="24" rx="4" fill="rgba(0, 229, 255, 0.15)" stroke="#00e5ff" stroke-width="1"/>
+  <text x="805" y="32" font-family="JetBrains Mono, monospace" font-size="10" font-weight="700" fill="#00e5ff" text-anchor="middle">10/10 PASS CERTIFIED</text>
+
+  <!-- Metric Badges -->
+  <g transform="translate(30, 75)">
+    <!-- Card 1 -->
+    <rect x="0" y="0" width="220" height="65" rx="6" fill="#1e293b" stroke="#334155"/>
+    <text x="15" y="24" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" fill="#94a3b8">Active Keys in Orbit</text>
+    <text x="15" y="52" font-family="JetBrains Mono, monospace" font-size="22" font-weight="700" fill="#10b981">14 Keys</text>
+
+    <!-- Card 2 -->
+    <rect x="240" y="0" width="220" height="65" rx="6" fill="#1e293b" stroke="#334155"/>
+    <text x="255" y="24" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" fill="#94a3b8">Master KEKs (Tier 0)</text>
+    <text x="255" y="52" font-family="JetBrains Mono, monospace" font-size="22" font-weight="700" fill="#00e5ff">3 Root KEKs</text>
+
+    <!-- Card 3 -->
+    <rect x="480" y="0" width="220" height="65" rx="6" fill="#1e293b" stroke="#334155"/>
+    <text x="495" y="24" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" fill="#94a3b8">OTAR Rekey Status</text>
+    <text x="495" y="52" font-family="JetBrains Mono, monospace" font-size="20" font-weight="700" fill="#38bdf8">NOMINAL (AES-KW)</text>
+
+    <!-- Card 4 -->
+    <rect x="720" y="0" width="220" height="65" rx="6" fill="#1e293b" stroke="#334155"/>
+    <text x="735" y="24" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" fill="#94a3b8">Zeroized End-of-Life</text>
+    <text x="735" y="52" font-family="JetBrains Mono, monospace" font-size="22" font-weight="700" fill="#f43f5e">2 Keys Zeroized</text>
+  </g>
+
+  <!-- Left: Vault Table Mockup -->
+  <g transform="translate(30, 160)">
+    <rect x="0" y="0" width="580" height="450" rx="8" fill="#111827" stroke="#1f2937" stroke-width="1.5"/>
+    <rect x="0" y="0" width="580" height="40" rx="8" fill="#1f2937"/>
+    <text x="20" y="25" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="700" fill="#ffffff">Active Symmetric Key Vault (5-State Engine)</text>
+
+    <!-- Table Header -->
+    <rect x="10" y="50" width="560" height="30" fill="#182338"/>
+    <text x="20" y="70" font-family="JetBrains Mono, monospace" font-size="10" font-weight="700" fill="#94a3b8">KEY ID</text>
+    <text x="130" y="70" font-family="JetBrains Mono, monospace" font-size="10" font-weight="700" fill="#94a3b8">TYPE / TIER</text>
+    <text x="240" y="70" font-family="JetBrains Mono, monospace" font-size="10" font-weight="700" fill="#94a3b8">PURPOSE</text>
+    <text x="390" y="70" font-family="JetBrains Mono, monospace" font-size="10" font-weight="700" fill="#94a3b8">STATE</text>
+    <text x="490" y="70" font-family="JetBrains Mono, monospace" font-size="10" font-weight="700" fill="#94a3b8">ACTIONS</text>
+
+    <!-- Row 1 -->
+    <rect x="10" y="85" width="560" height="40" fill="#0f172a" stroke="#1e293b"/>
+    <text x="20" y="108" font-family="JetBrains Mono, monospace" font-size="11" font-weight="700" fill="#38bdf8">MK-GEO-01</text>
+    <text x="130" y="108" font-family="JetBrains Mono, monospace" font-size="10" fill="#cbd5e1">MASTER (T0)</text>
+    <text x="240" y="108" font-family="JetBrains Mono, monospace" font-size="10" fill="#cbd5e1">KEK OTAR</text>
+    <rect x="385" y="95" width="70" height="20" rx="3" fill="#064e3b"/>
+    <text x="420" y="109" font-family="JetBrains Mono, monospace" font-size="9" font-weight="700" fill="#10b981" text-anchor="middle">ACTIVE</text>
+    <rect x="490" y="95" width="60" height="20" rx="3" fill="#334155"/>
+    <text x="520" y="109" font-family="JetBrains Mono, monospace" font-size="9" fill="#ffffff" text-anchor="middle">Manage</text>
+
+    <!-- Row 2 -->
+    <rect x="10" y="130" width="560" height="40" fill="#0f172a" stroke="#1e293b"/>
+    <text x="20" y="153" font-family="JetBrains Mono, monospace" font-size="11" font-weight="700" fill="#38bdf8">SK-PAYLOAD-TM</text>
+    <text x="130" y="153" font-family="JetBrains Mono, monospace" font-size="10" fill="#cbd5e1">SESSION (T1)</text>
+    <text x="240" y="153" font-family="JetBrains Mono, monospace" font-size="10" fill="#cbd5e1">TM AEAD (GCM)</text>
+    <rect x="385" y="140" width="70" height="20" rx="3" fill="#064e3b"/>
+    <text x="420" y="154" font-family="JetBrains Mono, monospace" font-size="9" font-weight="700" fill="#10b981" text-anchor="middle">ACTIVE</text>
+    <rect x="490" y="140" width="60" height="20" rx="3" fill="#334155"/>
+    <text x="520" y="154" font-family="JetBrains Mono, monospace" font-size="9" fill="#ffffff" text-anchor="middle">Manage</text>
+
+    <!-- Row 3 -->
+    <rect x="10" y="175" width="560" height="40" fill="#0f172a" stroke="#1e293b"/>
+    <text x="20" y="198" font-family="JetBrains Mono, monospace" font-size="11" font-weight="700" fill="#38bdf8">SK-LEGACY-02</text>
+    <text x="130" y="198" font-family="JetBrains Mono, monospace" font-size="10" fill="#cbd5e1">SESSION (T1)</text>
+    <text x="240" y="198" font-family="JetBrains Mono, monospace" font-size="10" fill="#cbd5e1">TM ENCRYPTION</text>
+    <rect x="385" y="185" width="85" height="20" rx="3" fill="#1e293b" stroke="#64748b"/>
+    <text x="427" y="199" font-family="JetBrains Mono, monospace" font-size="8" font-weight="700" fill="#94a3b8" text-anchor="middle">DEACTIVATED</text>
+    <text x="520" y="199" font-family="JetBrains Mono, monospace" font-size="9" fill="#94a3b8" text-anchor="middle">Read-Only</text>
+
+    <!-- Row 4 -->
+    <rect x="10" y="220" width="560" height="40" fill="#0f172a" stroke="#1e293b"/>
+    <text x="20" y="243" font-family="JetBrains Mono, monospace" font-size="11" font-weight="700" fill="#64748b" text-decoration="line-through">SK-ZERO-99</text>
+    <text x="130" y="243" font-family="JetBrains Mono, monospace" font-size="10" fill="#64748b">SESSION (T2)</text>
+    <text x="240" y="243" font-family="JetBrains Mono, monospace" font-size="10" fill="#64748b">TC AUTH (CMAC)</text>
+    <rect x="385" y="230" width="70" height="20" rx="3" fill="#4c0519"/>
+    <text x="420" y="244" font-family="JetBrains Mono, monospace" font-size="8" font-weight="700" fill="#f43f5e" text-anchor="middle">DESTROYED</text>
+    <text x="520" y="244" font-family="JetBrains Mono, monospace" font-size="9" fill="#f43f5e" text-anchor="middle">Zeroized</text>
+  </g>
+
+  <!-- Right: OTAR Uplink & Inspector Mockup -->
+  <g transform="translate(630, 160)">
+    <rect x="0" y="0" width="340" height="450" rx="8" fill="#111827" stroke="#1f2937" stroke-width="1.5"/>
+    <rect x="0" y="0" width="340" height="40" rx="8" fill="#1f2937"/>
+    <text x="20" y="25" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="700" fill="#ffffff">OTAR PDU Live Inspector (§4.3)</text>
+
+    <!-- Code Block -->
+    <rect x="15" y="55" width="310" height="375" rx="4" fill="#090d16" stroke="#243552"/>
+    <text x="25" y="80" font-family="JetBrains Mono, monospace" font-size="10" fill="#38bdf8">{</text>
+    <text x="35" y="100" font-family="JetBrains Mono, monospace" font-size="10" fill="#94a3b8">"pdu_type": <tspan fill="#34d399">"CCSDS_354_OTAR_DELIVERY"</tspan>,</text>
+    <text x="35" y="120" font-family="JetBrains Mono, monospace" font-size="10" fill="#94a3b8">"standard": <tspan fill="#34d399">"CCSDS 354.0-M-1"</tspan>,</text>
+    <text x="35" y="140" font-family="JetBrains Mono, monospace" font-size="10" fill="#94a3b8">"kek_id": <tspan fill="#34d399">"MK-GEO-01"</tspan>,</text>
+    <text x="35" y="160" font-family="JetBrains Mono, monospace" font-size="10" fill="#94a3b8">"session_key_id": <tspan fill="#34d399">"SK-UPLINK-04"</tspan>,</text>
+    <text x="35" y="180" font-family="JetBrains Mono, monospace" font-size="10" fill="#94a3b8">"tier": <tspan fill="#f59e0b">1</tspan>,</text>
+    <text x="35" y="200" font-family="JetBrains Mono, monospace" font-size="10" fill="#94a3b8">"purpose": <tspan fill="#34d399">"SESSION_TRAFFIC_AEAD"</tspan>,</text>
+    <text x="35" y="220" font-family="JetBrains Mono, monospace" font-size="10" fill="#94a3b8">"crypto_wrapper": <tspan fill="#34d399">"AES-256-KW"</tspan>,</text>
+    <text x="35" y="240" font-family="JetBrains Mono, monospace" font-size="10" fill="#94a3b8">"iv_tag": <tspan fill="#38bdf8">"A65959A6F4A80297"</tspan>,</text>
+    <text x="35" y="260" font-family="JetBrains Mono, monospace" font-size="10" fill="#94a3b8">"wrapped_payload": <tspan fill="#38bdf8">"7D4B...E91A"</tspan>,</text>
+    <text x="35" y="280" font-family="JetBrains Mono, monospace" font-size="10" fill="#94a3b8">"integrity_status": <tspan fill="#10b981">"VERIFIED"</tspan></text>
+    <text x="25" y="305" font-family="JetBrains Mono, monospace" font-size="10" fill="#38bdf8">}</text>
+
+    <!-- Operational Verdict -->
+    <rect x="25" y="330" width="290" height="85" rx="4" fill="#064e3b" stroke="#10b981"/>
+    <text x="35" y="355" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="700" fill="#ffffff">ONBOARD REKEY VERDICT:</text>
+    <text x="35" y="375" font-family="JetBrains Mono, monospace" font-size="9" fill="#a7f3d0">• KEK Matched: MK-GEO-01</text>
+    <text x="35" y="390" font-family="JetBrains Mono, monospace" font-size="9" fill="#a7f3d0">• Session Key Decrypted & Ingested</text>
+    <text x="35" y="405" font-family="JetBrains Mono, monospace" font-size="9" fill="#a7f3d0">• Lifecycle State: PRE_ACTIVATION</text>
+  </g>
+</svg>
